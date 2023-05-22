@@ -198,9 +198,10 @@
   <script>
     $(document).ready(function () {
       var url = window.location.href;
-      var service_url = 'file:///D:/WebDev/Services.html';
+      var service_url = 'http://localhost/WebDev/Services.php';
+      console.log(url)
       if(url==service_url){
-        $('.nav-items a').addClass('demo');        
+        $('.nav-items a').addClass('color-white');        
       }
       var lastScroll = 0;
 
