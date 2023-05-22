@@ -1,6 +1,7 @@
 <?php
 // ----------add Category--------
 if (isset($_POST['add'])) {
+    $image = $_POST['image'];
     $parent_category_id = $_POST['parent_category_id'];
     $category_name = $_POST['category_name'];
 

@@ -1,6 +1,6 @@
 <?php
-  require_once 'include/connection.php';
-  require_once 'add_header_db.php';
+require_once 'include/connection.php';
+require_once 'add_header_db.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,16 +8,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Add Category</title>
-    <?php 
-      require_once 'include/headerscript.php'; 
-    ?>
+    <?php require_once 'include/headerscript.php'; ?>
   </head>
   <body class="hold-transition sidebar-mini">
     <div class="wrapper">
     <!-- Navbar -->
-    <?php 
-      require_once 'include/header.php'; 
-    ?>
+    <?php require_once 'include/header.php'; ?>
     <!-- /.navbar -->
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
@@ -53,8 +49,10 @@
                   </div>
                   <!-- /.card-header -->
                   <!-- form start -->
-                  <form method="post" id="category_form" class="form-horizontal">
+                  <form method="post" id="category_form" class="form-horizontal" enctype="multipart/form-data">
+                    <input type="hidden" name="image" value="<?php if(!empty($_GET['image'])){echo "$_GET['user_id']"; } ?>"> 
                     <div class="card-body">
+                    <?php if (!empty($_GET['image'])) { ?>
                     <div class="form-group row">
                         <label for="id_proof" class="col-sm-3 col-form-label">Header Image</label>
                         <div class="col-sm-9">
@@ -64,6 +62,7 @@
                           </div>
                         </div>
                       </div>
+                      <?php } else { ?>
                       <div class="form-group row">
                         <label for="page_name" class="col-sm-3 col-form-label">Page Name</label>
                         <div class="col-sm-9">
@@ -77,6 +76,7 @@
                         </div>
                       </div>
                     </div>
+                    <?php } ?>
                     <!-- /.card-body -->
                     <div class="card-footer">
                       <button type="submit" name="add" class="btn btn-secondary float-right ml-3">Add</button>
@@ -97,17 +97,13 @@
       <!-- /.content-wrapper -->
 
       <footer class="main-footer">
-        <?php 
-          require_once "include/footer.php"; 
-        ?>
+        <?php require_once 'include/footer.php'; ?>
       </footer>
     </div>
     <!-- ./wrapper -->
 
     <!-- Footer Script -->
-    <?php 
-      require_once 'include/footerscript.php'; 
-    ?>
+    <?php require_once 'include/footerscript.php'; ?>
     <!-- Page Footer Script -->
   </body>
 </html>

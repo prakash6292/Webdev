@@ -1,6 +1,5 @@
 <?php
-  $activePage = basename($_SERVER['PHP_SELF'], ".php");
-?>
+$activePage = basename($_SERVER['PHP_SELF'], '.php'); ?>
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <a href="" class="brand-link">
     <img src="asset/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -17,40 +16,26 @@
         <a href="#" class="d-block"><?php echo $_SESSION['first_name']; ?></a>
       </div>
     </div>
-
+    
     <!-- Sidebar Menu -->
     <nav class="mt-2" id="toggle">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
         <li class="nav-item">
-          <a href="dashboard.php" class="nav-link <?= ($activePage == 'dashboard') ? 'active':''; ?>">
+          <a href="dashboard.php" class="nav-link <?= $activePage == 'dashboard'
+              ? 'active'
+              : '' ?>">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>
               Dashboard
             </p>
           </a>
         </li>
-        
+        <!-- header section -->
         <li class="nav-item">
-          <a href="#" class="nav-link <?php if($activePage == 'change_pwd'){ echo "active";} ?>">
-            <i class="nav-icon fa fa-user"></i>
-            <p>
-              Profile
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="change_pwd.php" class="nav-link <?= ($activePage == 'change_pwd') ? 'active':''; ?>">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Change Password</p>
-              </a>
-            </li>
-          </ul>
-        </li> 
-
-        <li class="nav-item">
-          <a href="#" class="nav-link <?php if($activePage == 'header'){ echo "active";} ?>">
+          <a href="#" class="nav-link <?php if ($activePage == 'header') {
+              echo 'active';
+          } ?>">
             <i class="nav-icon fa fa-user"></i>
             <p>
               Header
@@ -59,7 +44,9 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="header.php" class="nav-link <?= ($activePage == 'header') ? 'active':''; ?>">
+              <a href="header.php" class="nav-link <?= $activePage == 'header'
+                  ? 'active'
+                  : '' ?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Header</p>
               </a>
@@ -67,13 +54,40 @@
           </ul>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="header_display.php" class="nav-link <?= ($activePage == 'header_display') ? 'active':''; ?>">
+              <a href="display_header.php" class="nav-link <?= $activePage ==
+              'display_header'
+                  ? 'active'
+                  : '' ?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Header Display</p>
               </a>
             </li>
           </ul>
         </li> 
+        
+        <li class="nav-item">
+          <a href="#" class="nav-link <?php if ($activePage == 'change_pwd') {
+              echo 'active';
+          } ?>">
+            <i class="nav-icon fa fa-user"></i>
+            <p>
+              Profile
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="change_pwd.php" class="nav-link <?= $activePage ==
+              'change_pwd'
+                  ? 'active'
+                  : '' ?>">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Change Password</p>
+              </a>
+            </li>
+          </ul>
+        </li> 
+
 
       </ul>
     </nav>

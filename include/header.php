@@ -35,31 +35,35 @@ $activePage = basename($_SERVER['PHP_SELF'], '.php'); ?>
         <ul class="align-items-start align-items-lg-center d-flex nav-bar flex-lg-row flex-column">
           <li class="nav-items">
             <a href="index.php" <?php if ($activePage == 'index') {
-                echo 'active';
+                echo 'class = "active"';
             } ?>>Home</a>
           </li>
           <li class="nav-items">
             <a href="services.php" <?php if ($activePage == 'services') {
-                echo 'active';
+                echo 'class = "active"';
             } ?>>Services</a>
           </li>
           <li class="nav-items">
             <a href="hiredevelopers.php" <?php if (
                 $activePage == 'hiredevelopers'
             ) {
-                echo 'active';
+                echo 'class = "active"';
             } ?>>Hire Developers </a>
           </li>
           <li class="nav-items">
             <a href="portfolio.php"<?php if ($activePage == 'portfolio') {
-                echo 'active';
+                echo 'class = "active"';
             } ?>>Portfolio</a>
           </li>
           <li class="nav-items">
-            <a href="Aboutus.php">About Us</a>
+            <a href="aboutus.php" <?php if ($activePage == 'aboutus') {
+                echo 'class = "active"';
+            } ?>>About Us</a>
           </li>
           <li class="nav-items">
-            <a href="Contactus.php">Contact us</a>
+            <a href="contactus.php" <?php if ($activePage == 'contactus') {
+                echo 'class = "active"';
+            } ?>>Contact us</a>
           </li>
         </ul>
       </div>
