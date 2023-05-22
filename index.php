@@ -1,17 +1,4 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <?php 
-    include "include/header_script.php";
-  ?>
-</head>
-
-<body>
-  <?php
+<?php
     require_once 'include/header.php';
   ?>
   <div class="h_100"></div>
@@ -82,7 +69,7 @@
       </div>
     </div>
   </section>
-  <div class="h_100"></div>
+  <di class="h_100"></div>
   <!-- small-team-section -->
   <section class="small-team-section">
     <div class="container">

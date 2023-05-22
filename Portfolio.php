@@ -1,18 +1,4 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <?php 
-    require_once "include/header_script.php";
-  ?>
-</head>
-
-<body>
-  <!-- nav-menu-main -->
-  <?php 
+ <?php 
     require_once "include/header.php";
   ?>
   <div class="h_100"></div>
@@ -407,7 +393,6 @@
   <div class="h_100"></div>
   <?php 
     require_once "include/footer.php";
-    require_once "include/footer_script.php";
   ?>
   <script>
     $(document).ready(function () {

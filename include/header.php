@@ -47,10 +47,10 @@
             <a href="Portfolio.php">Portfolio</a>
           </li>
           <li class="nav-items">
-            <a href="#">About Us</a>
+            <a href="Aboutus.php">About Us</a>
           </li>
           <li class="nav-items">
-            <a href="#">Contact us</a>
+            <a href="Contactus.php">Contact us</a>
           </li>
         </ul>
       </div>
