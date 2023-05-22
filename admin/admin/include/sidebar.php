@@ -49,6 +49,32 @@
           </ul>
         </li> 
 
+        <li class="nav-item">
+          <a href="#" class="nav-link <?php if($activePage == 'header'){ echo "active";} ?>">
+            <i class="nav-icon fa fa-user"></i>
+            <p>
+              Header
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="header.php" class="nav-link <?= ($activePage == 'header') ? 'active':''; ?>">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Header</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="header_display.php" class="nav-link <?= ($activePage == 'header_display') ? 'active':''; ?>">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Header Display</p>
+              </a>
+            </li>
+          </ul>
+        </li> 
+
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

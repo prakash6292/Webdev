@@ -1,6 +1,6 @@
 <?php
   require_once 'include/connection.php';
-  require_once 'add_category_db.php';
+  require_once 'add_header_db.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,6 +55,15 @@
                   <!-- form start -->
                   <form method="post" id="category_form" class="form-horizontal">
                     <div class="card-body">
+                    <div class="form-group row">
+                        <label for="id_proof" class="col-sm-3 col-form-label">Header Image</label>
+                        <div class="col-sm-9">
+                          <div class="custom-file">
+                            <input type="file" name="header_image" class="custom-file-input" id="header_image">
+                            <label class="custom-file-label" for="customFile">Choose File</label>
+                          </div>
+                        </div>
+                      </div>
                       <div class="form-group row">
                         <label for="page_name" class="col-sm-3 col-form-label">Page Name</label>
                         <div class="col-sm-9">
