@@ -201,6 +201,10 @@ nav.nav-menu-main{
     transform: scale(1);
     transform-origin: left;
 }
+.nav-menu-main .nav-items a.active:before{
+    transform: scale(1);
+    transform-origin: left;
+}
 .nav-menu-main.show #menu_icons{
     display: none!important;
 }
