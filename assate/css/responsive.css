@@ -1,0 +1,30 @@
+@media (max-width: 1500px) {
+   
+    
+}
+
+
+
+@media (max-width: 1199px) {
+   
+}
+
+@media (max-width: 991px) {
+ .nav-menu-main .nav-bar{
+    display: none!important;
+ }
+ .nav-menu-main.show .nav-bar{
+    display: block!important;
+ }   
+ .small-team-section .small-team-items{
+   margin: 20px;
+}
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 575px) {
+    
+}
