@@ -106,3 +106,9 @@
       <a href="#" class="f-12 color-black">Copyright @2023. All Rights Reserved</a>
     </div>
   </footer>
+  <?php
+    require_once "include/footer_script.php";
+    ?>
+    </body>
+
+</html>

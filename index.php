@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
   <?php 
-    require_once "include/header_script.php";
+    include "include/header_script.php";
   ?>
 </head>
 

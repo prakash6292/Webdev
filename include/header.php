@@ -1,3 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <?php 
+      require_once "include/header_script.php";
+    ?>
+
+</head>
+
+<body>
 <!-- nav-menu-main -->
 <nav class="nav-menu-main position-fixed start-0 end-0 top-0 z-3">
     <div class="container">
