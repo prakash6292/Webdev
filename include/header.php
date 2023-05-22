@@ -1,13 +1,12 @@
+<?php
+$activePage = basename($_SERVER['PHP_SELF'], '.php'); ?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <?php 
-      require_once "include/header_script.php";
-    ?>
-
+    <?php require_once 'include/header_script.php'; ?>
 </head>
 
 <body>
@@ -35,16 +34,26 @@
         </div>
         <ul class="align-items-start align-items-lg-center d-flex nav-bar flex-lg-row flex-column">
           <li class="nav-items">
-            <a href="index.php">Home</a>
+            <a href="index.php" <?php if ($activePage == 'index') {
+                echo 'active';
+            } ?>>Home</a>
           </li>
           <li class="nav-items">
-            <a href="Services.php">Services</a>
+            <a href="services.php" <?php if ($activePage == 'services') {
+                echo 'active';
+            } ?>>Services</a>
           </li>
           <li class="nav-items">
-            <a href="Hiredevelopers.php">Hire Developers </a>
+            <a href="hiredevelopers.php" <?php if (
+                $activePage == 'hiredevelopers'
+            ) {
+                echo 'active';
+            } ?>>Hire Developers </a>
           </li>
           <li class="nav-items">
-            <a href="Portfolio.php">Portfolio</a>
+            <a href="portfolio.php"<?php if ($activePage == 'portfolio') {
+                echo 'active';
+            } ?>>Portfolio</a>
           </li>
           <li class="nav-items">
             <a href="#">About Us</a>
